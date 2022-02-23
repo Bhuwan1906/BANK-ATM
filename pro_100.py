@@ -7,25 +7,25 @@ class Atm:
 
     def check_balance(self):
         print("Your balance is :-")
-        print("Knuts = 100")
-        print("Sickles = 200")
-        print("Galleon = 300")
+        print("BUBBLE_NOTE = 100")
+        print("BUBBLE_coin = 200")
+        print("BUBBLE_GC = 300")
 
-    def withdrawl1(self,knuts):
-        new_amount = 100 - knuts
-        print("You have withdrawn amount "+str(knuts) + ". Your remaining balance is "+ str(new_amount))
+    def withdrawl1(self,BUBBLE_NOTE):
+        new_amount = 100 - BUBBLE_NOTE
+        print("You have withdrawn amount "+str(BUBBLE_NOTE) + ". Your remaining balance is "+ str(new_amount))
 
-    def withdrawl2(self,sickles):
-        new_amount = 200 - sickles
-        print("You have withdrawn amount "+str(sickles) + ". Your remaining balance is "+ str(new_amount))
+    def withdrawl2(self,BUBBLE_coin):
+        new_amount = 200 - BUBBLE_coin
+        print("You have withdrawn amount "+str(BUBBLE_coin) + ". Your remaining balance is "+ str(new_amount))
 
-    def withdrawl3(self,galleon):
-        new_amount = 300 - galleon
-        print("You have withdrawn amount "+str(galleon) + ". Your remaining balance is "+ str(new_amount))        
+    def withdrawl3(self,BUBBLE_GC):
+        new_amount = 300 - BUBBLE_GC
+        print("You have withdrawn amount "+str(BUBBLE_GC) + ". Your remaining balance is "+ str(new_amount))        
 
 
 def main():
-    print("Welcome to Bhuwans Bank! Bhuwan welcome You to Bank!!")
+    print("Welcome to BUBBLE'S Bank! Bhuwan welcome's You to Bank!!")
     Account = input("Please enter your acount image or number: ")
     Card_number = input("Insert your key number:- ")
     pin_number  = input("Enter your pin number:- ")
@@ -39,19 +39,19 @@ def main():
     if (activity == 1):
         new_user.check_balance()
     elif (activity == 2):
-        print("1. Add Knuts")
-        print("2. Add Sickles")
-        print("3. Add Galleon")
-        choose = int(input("1. Add Knuts  2. Add Sickles 3. Add Galleon: "))
+        print("1. BUBBLE_NOTE")
+        print("2. BUBBLE_coin")
+        print("3. BUBBLE_GC")
+        choose = int(input("1. Add BUBBLE_NOTE  2. Add BUBBLE_coin 3. Add BUBBLE_GC: "))
         if (choose == 1):
-           knuts = int(input("Enter the amount:- "))
-           new_user.withdrawl1(knuts)
+           BUBBLE_NOTE = int(input("Enter the amount:- "))
+           new_user.withdrawl1(BUBBLE_NOTE)
         if (choose == 2):
-           sickles = int(input("Enter the amount:- "))
-           new_user.withdrawl2(sickles)    
+           BUBBLE_coin= int(input("Enter the amount:- "))
+           new_user.withdrawl2(BUBBLE_coin)    
         if (choose == 3):
-           galleon = int(input("Enter the amount:- "))
-           new_user.withdrawl3(galleon)
+           BUBBLE_GC = int(input("Enter the amount:- "))
+           new_user.withdrawl3(BUBBLE_GC)
     else:
         print("Enter a valid number")
 
